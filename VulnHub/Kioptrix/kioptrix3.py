@@ -66,9 +66,9 @@ option = menu()
 
 if int(option) == 1:
 	loneferretCon(target)
-elif int(option) == 2:
+#elif int(option) == 2:
 	dregCon(target)
-elif int(option) == 3:
+elif int(option) == 2:
 	wdataCon()
 else:
 	quit()
