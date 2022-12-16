@@ -19,8 +19,8 @@ def quit():
 
 def menu():
 	print("Select the user you want to log in with: ")
-	print("\t1) loneferret          3) www-data")
-	print("\t2) dreg                4) Exit\n")
+	print("\t1) loneferret          2) www-data")
+	print("\t3) Exit\n")
 	attackT = input("Choose your option: ")
 	return attackT
 
