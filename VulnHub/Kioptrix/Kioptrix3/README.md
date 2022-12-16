@@ -1,3 +1,5 @@
 Readme
 test
-> cita
+```python
+pip install pwntools
+```
