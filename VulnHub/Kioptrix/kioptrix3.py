@@ -27,6 +27,7 @@ def menu():
 def loneferretCon(target):
 	request = ssh(host=target, user='loneferret', password='starwars')
 	shell = request.run("/bin/sh")
+	shell.sendline(b"clear; echo -n 'Logged in as: '; whoami")
 	shell.interactive()
 
 def dregCon(target):
@@ -67,7 +68,7 @@ option = menu()
 if int(option) == 1:
 	loneferretCon(target)
 #elif int(option) == 2:
-	dregCon(target)
+#	dregCon(target)
 elif int(option) == 2:
 	wdataCon()
 else:
