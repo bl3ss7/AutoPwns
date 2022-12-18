@@ -3,5 +3,8 @@ HOSTNAME=$1
 USERNAME=sickos
 PASSWORD=john@123
 
+clear
 echo "[\033[0;36m?\e[0;39m] SickOs's password: john@123"
-sshpass -p "$PASSWORD" ssh -t "$USERNAME"@"$HOSTNAME" "sudo su; clear; echo 'Logged in as: '; whoami"
+sshpass -p "$PASSWORD" ssh -X "$USERNAME"@"$HOSTNAME" -t "sudo su"
+clear
+echo "[\033[0;32m+\033[0;39m] Thanks for using my program!\n[\033[0;31mî¬…\033[0;39m] See you."
